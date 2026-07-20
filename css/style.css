@@ -1,0 +1,27 @@
+/* Main Settings */
+:root{
+    --main-color:#FF8400;
+     /* Buttons, Some titles, Icons, Selected things, Loading Screen, Scroll */
+    --sec-color: #9F5300;
+    /* Hover, Footer */
+    --main-text-color: #FFFFFF;
+    /* Most of titles, and text */
+    --sec-text-color: #6F6F6F;
+    /* Secondary text */
+}
+/* Font name 'Kalam', Font family ('Kalam', cursive) -> this is kalam regular */
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Font name 'Merienda', Font family ('Merienda', cursive) -> this is Merienda regular */
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Luckiest+Guy&family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kalam", cursive;
+    transition: all 1s;
+}
+a {
+    text-decoration: none;
+}
+
+/* Menu Section */
