@@ -1,3 +1,8 @@
+/* Fonts */
+/* Font name 'Kalam', Font family ('Kalam', cursive) -> this is kalam regular */
+/* Font name 'Merienda', Font family ('Merienda', cursive) -> this is Merienda regular */
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Luckiest+Guy&family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Main Settings */
 :root{
     --main-color:#FF8400;
@@ -8,20 +13,174 @@
     /* Most of titles, and text */
     --sec-text-color: #6F6F6F;
     /* Secondary text */
+    --dark-color: #472706;
 }
-/* Font name 'Kalam', Font family ('Kalam', cursive) -> this is kalam regular */
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* Font name 'Merienda', Font family ('Merienda', cursive) -> this is Merienda regular */
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Luckiest+Guy&family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Kalam", cursive;
-    transition: all 1s;
+    color: var(--main-text-color);
 }
 a {
+    color: var(--main-text-color);
     text-decoration: none;
+    height: 40px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Menu Section */
+/*--------------------------------------*/
+
+/* Start Menu Section */
+.menu{
+    display: flex;
+    justify-content: center;
+}
+
+
+.menu .cards{
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu .cards:hover .card{
+    transform: perspective(35px) rotateY(2deg);
+}
+
+
+.menu .cards .card{
+    border: 0;
+    border-radius: 0;
+    width: 400px;
+    height: 400px;
+    transition: transform 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+.menu .cards .card:hover{
+    z-index: 1;
+    transform: scale(1.2) rotateY(0deg);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+}
+#left-card:hover ~ #right-card, #right-card:hover ~ #left-card{
+    transform: perspective(25px) rotateY(-1.9deg);
+    z-index: -1;
+}
+#left-card:hover ~ #middle-card, #middle-card:hover ~ #right-card{
+    transform: perspective(35px) rotateY(-2deg);
+}
+
+
+.menu .cards .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.menu .cards .card .overlay{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    gap: 10px;
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+.menu .cards .card:hover .overlay{
+    opacity: 1;
+}
+.menu .cards .card .overlay::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(100%, 52%, 0%, 72%));
+    mix-blend-mode: multiply;
+}
+
+
+.menu .cards .card .overlay h2{
+    font-family: "Merienda", cursive;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    transition-delay: 1s;
+}
+.menu .cards .card .overlay p{
+    width: 100%;
+    transition-delay: 2s;
+}
+.menu .cards .card .overlay a{
+    padding: 0px 15px ;
+    width: fit-content;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    transition-delay: 3s;
+}
+
+
+.menu .cards .card .overlay h2,
+.menu .cards .card .overlay p,
+.menu .cards .card .overlay a{
+    opacity: 0;
+    transform: translateY(600px);
+    transition:
+        transform 0.5s ease-out,
+        opacity 0.5s ease-out;
+
+}
+.menu .cards .card:hover .overlay h2{
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+.menu .cards .card:hover .overlay p{
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+}
+.menu .cards .card:hover .overlay a{
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.6s;
+}
+
+
+@media screen and (min-width:0px) and (max-width:991px){
+    .menu .cards{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .menu .cards .card{
+        width: 80%;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+    .menu .cards .card{
+        width: calc(95% / 3);
+    }
+    
+}
+@media screen and (min-width:1200px) and (max-width:1399px){
+    .menu .cards .card{
+        width: calc(87% / 3);
+    }
+}
+@media screen and (min-width:1400px){
+    .menu .cards .card{
+        width: calc(80% / 3);
+    }
+}
+/* End Menu Section */
+/*--------------------------------------*/
