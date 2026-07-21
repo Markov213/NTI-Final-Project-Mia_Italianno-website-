@@ -49,7 +49,7 @@ a {
     align-items: center;
 }
 .menu .cards:hover .card{
-    transform: perspective(35px) rotateY(2deg);
+    transform: scale(1.1) perspective(35px) rotateY(2deg);
 }
 
 
@@ -68,11 +68,11 @@ a {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
 }
 #left-card:hover ~ #right-card, #right-card:hover ~ #left-card{
-    transform: perspective(25px) rotateY(-1.9deg);
+    transform: scale(1.1) perspective(25px) rotateY(-1.9deg);
     z-index: -1;
 }
 #left-card:hover ~ #middle-card, #middle-card:hover ~ #right-card{
-    transform: perspective(35px) rotateY(-2deg);
+    transform: scale(1.1) perspective(35px) rotateY(-2deg);
 }
 
 
@@ -160,26 +160,38 @@ a {
     .menu .cards{
         flex-direction: column;
         align-items: center;
-        gap: 40px;
+        gap: 160px;
     }
     .menu .cards .card{
         width: 80%;
+        scale: 1.2;
+    }
+    .menu .cards:hover .card{
+        transform: perspective(5000px) rotateY(20deg) skewY(10deg);
+    }
+    .menu .cards .card:hover{
+        transform:  scale(1.4);
+    }
+    #left-card:hover ~ #right-card, #left-card:hover ~  #middle-card, #middle-card:hover ~ #right-card{
+        transform: perspective(5000px) rotateY(-20deg) skewY(10deg);
     }
 }
+
 @media screen and (min-width:992px) and (max-width:1199px){
     .menu .cards .card{
         width: calc(95% / 3);
     }
-    
 }
+
 @media screen and (min-width:1200px) and (max-width:1399px){
     .menu .cards .card{
-        width: calc(87% / 3);
+        width: calc(91% / 3);
     }
 }
+
 @media screen and (min-width:1400px){
     .menu .cards .card{
-        width: calc(80% / 3);
+        width: calc(83% / 3);
     }
 }
 /* End Menu Section */
