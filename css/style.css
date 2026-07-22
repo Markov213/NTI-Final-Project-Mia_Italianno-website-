@@ -293,19 +293,31 @@ padding: 10px 20px 10px 70px;
 }
 
 @media screen and (max-width:991px) {
-  #About-us .offer .imgs img{
-    width: calc(100%);
-    height: 130px;
+      #About-us .offer .imgs img{
+ 
+  width: 100%;              /* fills the container’s width */
+  height: 170px;             /* keeps natural aspect ratio */
+            /* removes inline gaps */
+
+
+    }
+
+ #About-us .offer .imgs .img1 .discount,
+ #About-us .offer .imgs .img2 .discount{
+    height: 170px;
+
 }
 
   #About-us .offer .imgs {
     flex-direction: column;
     flex-grow: 1;
     padding-bottom: 20px;
+
+    
   }
  #About-us .offer{
         flex-wrap: wrap;
-        padding: 70px 30px;
+        padding: 70px 100px;
     }
 
    
@@ -315,6 +327,7 @@ padding: 10px 20px 10px 70px;
 
      #About-us .offer .about .par{
        display: block;
+       padding-left: 30px;
     }
 
 }
