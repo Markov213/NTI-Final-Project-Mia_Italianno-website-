@@ -19,8 +19,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* font-family: "Kalam", cursive; */
-    /* transition: all 1s;  */
+    font-family: "Kalam", cursive; 
+     transition: all 1s;  
 }
 
 a {
@@ -46,7 +46,6 @@ body {
 #book h2 {
     color: var(--main-color);
     width: 60%;
-
 }
 
 #book p {
@@ -62,6 +61,9 @@ body {
     height: 40px;
     border: none;
     outline: none;
+}
+#book button:hover{
+    background-color: #E86D00;
 }
 
 @media screen and (max-width:768px) {
@@ -219,8 +221,12 @@ body {
 
 #f2 .insta img {
     width: 100%;
+    display: block;
     height: 150px;
-    shape-outside: sq;
+}
+
+#f2 .insta img:hover {
+    filter: brightness(0.7); /* Adjust (e.g., 0.8 for lighter, 0.5 for darker) */
 }
 
 #f2 .contact {
@@ -238,6 +244,8 @@ body {
 }
 
 #f2 .contact .links .link span {}
+
+
 
 @media screen and (min-width:769px) and (max-width:992px) {
     #f2 .about {
