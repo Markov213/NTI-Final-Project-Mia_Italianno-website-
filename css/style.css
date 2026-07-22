@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* Font name 'Merienda', Font family ('Merienda', cursive) -> this is Merienda regular */
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Luckiest+Guy&family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* Main Settings */
 :root {
@@ -28,6 +30,299 @@ a {
     text-decoration: none;
 }
 /* Menu Section */
+
+/*About-us Section Start*/
+
+ /* @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap'); */
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kalam", cursive;
+}  */
+
+#About-us{
+ 
+}
+
+#About-us .awards{
+display: flex;
+flex-wrap: wrap;
+justify-content:space-between;;
+border-bottom: 1px solid #EEEEEE;
+
+}
+
+#About-us .awards .award{
+ position: relative;
+    display: flex;
+ width: calc(100%/4);
+ justify-content: center;
+ align-items: center;
+ padding: 15px;
+}
+
+#About-us .awards .award::after{
+ position: absolute;
+ content:'';
+ width: 0;
+ height: 5px;
+ bottom: 0;
+ left: 0;
+ background-color:#FF8400;
+ visibility: hidden;
+ transition: width 0.6s ease-out;
+ 
+}
+
+#About-us .awards .award:hover::after {
+   visibility: visible;
+    width: 100%;
+}
+
+
+
+#About-us .awards .award .image {
+ padding: 20px;
+}
+
+
+#About-us .awards .award .image img{
+ width: 100px;
+ opacity: 0.5;
+}
+
+#About-us .awards .award .image img:hover{
+ opacity: 1;
+ transition-duration: 0.3s;
+}
+
+#About-us .awards .award .content{
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+}
+
+#About-us .awards .award .content p{
+    color: #666666;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+#About-us .awards .award .content img{
+width: 55px;
+    margin-bottom: 10px;
+}
+
+#About-us .awards .award .content span{
+ color: #D7CECB;
+ 
+}
+
+@media screen and (max-width:575px){
+ #About-us .awards .award{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:576px) and (max-width:1199px) {
+  #About-us .awards .award{
+    width: calc(95%/2);
+  }
+}
+
+/* @media screen and (min-width:1200px) and (max-width:1259) {
+  #About-us .awards .award{
+    width: calc(95%/3);
+  }
+} */
+
+#About-us .offer{
+ display: flex;
+  
+ justify-content: center;
+ padding: 70px 190px;
+  
+}
+
+#About-us .offer .imgs{
+  display: flex;
+ 
+}
+
+#About-us .offer .imgs .img1,
+#About-us .offer .imgs .img2{
+    position: relative;
+}
+
+#About-us .offer .imgs .img1 .discount,
+#About-us .offer .imgs .img2 .discount{
+
+  position:absolute ;
+  background-color: #ff840098;
+  width: 100%;
+  height: 130px;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-text-color);
+  font-weight: 300;
+}
+
+#About-us .offer .imgs .img1 .discount span,
+#About-us .offer .imgs .img2 .discount span{
+  font-size: 18px;
+  padding: 20px 0;
+  
+  font-family: "Roboto", sans-serif;
+}
+
+#About-us .offer .imgs .img1 .discount h2,
+#About-us .offer .imgs .img2 .discount h2{
+
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+
+/* #About-us .offer .imgs::before{
+ position: absolute;
+ content: '';
+  width: 50%;
+ height: 130px;
+ background-color: #ff840098;
+ font-size: 25px;
+ color: white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#About-us .offer .imgs::after{
+ position: absolute;
+ content: '';
+  width: 50%;
+ height: 130px;
+ background-color:black;
+ opacity: 0.5;
+ left: 50%;
+} */
+
+
+
+#About-us .offer .imgs img{
+   width: 300px;
+   height: 400px;
+object-fit: cover;
+}
+
+
+#About-us .offer .imgs .img2 .discount{
+background-color: #0000009e
+}
+#About-us .offer .imgs .img2 .discount span{
+  
+}
+#About-us .offer .imgs .img2 .discount h2{
+  
+}
+
+#About-us .offer .about{
+color: var(--sec-text-color);
+padding: 10px 20px 10px 70px;
+
+}
+
+#About-us .offer .about h2{
+  display: flex;
+  
+  padding-bottom: 30px;
+  padding-left: 30px;
+  font-family: 'Merienda', cursive;
+  /* padding: 0px 40px 20px 10px; */
+}
+
+#About-us .offer .about .par{
+  display: flex;
+  padding-bottom: 20px;
+}
+
+
+
+#About-us .offer .about .par p{
+  font-size: 18px;
+  position: relative;
+}
+
+/* #About-us .offer .about .par p::before{
+   position: absolute;
+    font-family: "Font Awesome 7 Free";
+    content: "\f10d";
+    font-weight: 900;
+    font-size: 25px;
+    left: -35px;
+    top: -5px;
+    
+ 
+} */
+ 
+    #About-us .offer .about .par i{
+  font-size: 22px;
+  padding-right: 35px;
+}
+
+#About-us .offer .about a{
+  
+  background-color: var(--main-color);
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  padding: 7px 15px;
+ margin-left: 30px;
+}
+
+#About-us .offer .about a:hover{
+  
+  background-color: #E86D00;
+  color: var(--main-text-color);
+  transition-duration: 0.3s;
+}
+
+@media screen and (max-width:991px) {
+  #About-us .offer .imgs img{
+    width: calc(100%);
+    height: 130px;
+}
+
+  #About-us .offer .imgs {
+    flex-direction: column;
+    flex-grow: 1;
+    padding-bottom: 20px;
+  }
+ #About-us .offer{
+        flex-wrap: wrap;
+        padding: 70px 30px;
+    }
+
+   
+    #About-us .offer .about{
+        padding:0px;
+    }
+
+     #About-us .offer .about .par{
+       display: block;
+    }
+
+}
+
+
+
+
+/*About-us Section Start*/
 
 /* booking Section Start */
 #book {
