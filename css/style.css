@@ -140,9 +140,8 @@ width: 55px;
 
 #About-us .offer{
  display: flex;
-  
  justify-content: center;
- padding: 70px 190px;
+ padding: 50px;
   
 }
 
@@ -150,7 +149,9 @@ width: 55px;
   display: flex;
  
 }
+#About-us .offer .imgs .img1{
 
+}
 #About-us .offer .imgs .img1,
 #About-us .offer .imgs .img2{
     position: relative;
@@ -233,7 +234,7 @@ background-color: #0000009e
 
 #About-us .offer .about{
 color: var(--sec-text-color);
-padding: 10px 20px 10px 70px;
+padding: 10px 20px 10px 50px;
 
 }
 
@@ -313,7 +314,6 @@ padding: 10px 20px 10px 70px;
   }
  #About-us .offer{
         flex-wrap: wrap;
-        padding: 70px 100px;
     }
 
    
