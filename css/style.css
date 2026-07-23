@@ -33,14 +33,6 @@ a {
 
 /*About-us Section Start*/
 
- /* @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap'); */
-/* *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Kalam", cursive;
-}  */
-
 #About-us{
  
 }
@@ -50,16 +42,17 @@ display: flex;
 flex-wrap: wrap;
 justify-content:space-between;;
 border-bottom: 1px solid #EEEEEE;
-
 }
 
 #About-us .awards .award{
  position: relative;
-    display: flex;
- width: calc(100%/4);
+  display: flex;
+ width: calc(95%/4);
+ flex-grow: 1;
  justify-content: center;
  align-items: center;
  padding: 15px;
+ 
 }
 
 #About-us .awards .award::after{
@@ -79,8 +72,6 @@ border-bottom: 1px solid #EEEEEE;
    visibility: visible;
     width: 100%;
 }
-
-
 
 #About-us .awards .award .image {
  padding: 20px;
@@ -120,29 +111,36 @@ width: 55px;
  
 }
 
-@media screen and (max-width:575px){
- #About-us .awards .award{
-    width: 100%;
-  }
+@media screen and (max-width:767px){
+    #About-us .awards .award{
+           border-bottom: 1px solid #EEEEEE;    
+    }
 }
 
-@media screen and (min-width:576px) and (max-width:1199px) {
-  #About-us .awards .award{
-    width: calc(95%/2);
-  }
+
+@media screen and (max-width:1199px){
+    #About-us .awards .award{
+       width:calc(95%/2);
+        min-width:250px;        
+    }
 }
 
-/* @media screen and (min-width:1200px) and (max-width:1259) {
-  #About-us .awards .award{
-    width: calc(95%/3);
-  }
-} */
+
+@media screen and (min-width:1200px) and (max-width:1399px){
+    #About-us .awards .award{
+      width:calc(95%/4);
+        min-width: 300px;  
+        justify-content: start;     
+    }
+}
+
+
 
 #About-us .offer{
  display: flex;
  justify-content: center;
- padding: 50px;
-  
+ padding: 50px ;
+ 
 }
 
 #About-us .offer .imgs{
@@ -150,21 +148,18 @@ width: 55px;
  
 }
 #About-us .offer .imgs .img1{
+  width: 300px;
+  height: 400px;
+  background-image: url('../img/image2.webp');
+  background-size: cover ;
+  background-repeat: no-repeat;
+}
 
-}
-#About-us .offer .imgs .img1,
-#About-us .offer .imgs .img2{
-    position: relative;
-}
 
 #About-us .offer .imgs .img1 .discount,
 #About-us .offer .imgs .img2 .discount{
-
-  position:absolute ;
   background-color: #ff840098;
-  width: 100%;
-  height: 130px;
-  top: 0px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -172,6 +167,7 @@ width: 55px;
   color: var(--main-text-color);
   font-weight: 300;
 }
+
 
 #About-us .offer .imgs .img1 .discount span,
 #About-us .offer .imgs .img2 .discount span{
@@ -188,49 +184,18 @@ width: 55px;
 }
 
 
-
-
-/* #About-us .offer .imgs::before{
- position: absolute;
- content: '';
-  width: 50%;
- height: 130px;
- background-color: #ff840098;
- font-size: 25px;
- color: white;
- display: flex;
- justify-content: center;
- align-items: center;
+#About-us .offer .imgs .img2{
+  width: 300px;
+  height: 400px;
+  background-image: url('../img/image1.webp');
+   background-size: cover ;
+  background-repeat: no-repeat;
 }
-
-#About-us .offer .imgs::after{
- position: absolute;
- content: '';
-  width: 50%;
- height: 130px;
- background-color:black;
- opacity: 0.5;
- left: 50%;
-} */
-
-
-
-#About-us .offer .imgs img{
-   width: 300px;
-   height: 400px;
-object-fit: cover;
-}
-
 
 #About-us .offer .imgs .img2 .discount{
 background-color: #0000009e
 }
-#About-us .offer .imgs .img2 .discount span{
-  
-}
-#About-us .offer .imgs .img2 .discount h2{
-  
-}
+
 
 #About-us .offer .about{
 color: var(--sec-text-color);
@@ -240,11 +205,9 @@ padding: 10px 20px 10px 50px;
 
 #About-us .offer .about h2{
   display: flex;
-  
   padding-bottom: 30px;
   padding-left: 30px;
   font-family: 'Merienda', cursive;
-  /* padding: 0px 40px 20px 10px; */
 }
 
 #About-us .offer .about .par{
@@ -252,32 +215,17 @@ padding: 10px 20px 10px 50px;
   padding-bottom: 20px;
 }
 
-
-
 #About-us .offer .about .par p{
   font-size: 18px;
-  position: relative;
 }
 
-/* #About-us .offer .about .par p::before{
-   position: absolute;
-    font-family: "Font Awesome 7 Free";
-    content: "\f10d";
-    font-weight: 900;
-    font-size: 25px;
-    left: -35px;
-    top: -5px;
-    
- 
-} */
- 
-    #About-us .offer .about .par i{
+
+#About-us .offer .about .par i{
   font-size: 22px;
   padding-right: 35px;
 }
 
-#About-us .offer .about a{
-  
+#About-us .offer .about a{ 
   background-color: var(--main-color);
   color: var(--main-text-color);
   font-weight: 700;
@@ -294,28 +242,26 @@ padding: 10px 20px 10px 50px;
 }
 
 @media screen and (max-width:991px) {
-  #About-us .offer .imgs img{
-    width: calc(100%);
+   #About-us .offer{
+        flex-direction: column;
+    }
+  #About-us .offer .imgs .img1,
+  #About-us .offer .imgs .img2{
+    width: 100%;
     height: 170px;
     
 }
  #About-us .offer .imgs .img1 .discount,
  #About-us .offer .imgs .img2 .discount{
-    height: 170px;
-
+     height: 100%;
 }
 
   #About-us .offer .imgs {
     flex-direction: column;
     flex-grow: 1;
     padding-bottom: 20px;
-
-    
+    width: 100%;
   }
- #About-us .offer{
-        flex-wrap: wrap;
-    }
-
    
     #About-us .offer .about{
         padding:0px;
@@ -327,9 +273,6 @@ padding: 10px 20px 10px 50px;
     }
 
 }
-
-
-
 
 /*About-us Section Start*/
 
