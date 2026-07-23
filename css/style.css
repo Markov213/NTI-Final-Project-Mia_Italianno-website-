@@ -241,21 +241,40 @@ a {
 }
 
 
-@media screen and (min-width:0px) and (max-width:991px){
+@media screen and (min-width:0px) and (max-width:767px){
     .menu .cards{
         flex-direction: column;
         align-items: center;
-        gap: 160px;
+        gap: 80px;
     }
     .menu .cards .card{
         width: 80%;
-        scale: 1.2;
     }
     .menu .cards:hover .card{
         transform: perspective(5000px) rotateY(20deg) skewY(10deg);
     }
     .menu .cards .card:hover{
-        transform:  scale(1.4);
+        transform:  scale(1.2);
+    }
+    #left-card:hover ~ #right-card, #left-card:hover ~  #middle-card, #middle-card:hover ~ #right-card{
+        transform: perspective(5000px) rotateY(-20deg) skewY(10deg);
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .menu .cards{
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+    .menu .cards .card{
+        width: 90%;
+    }
+    .menu .cards:hover .card{
+        transform: perspective(5000px) rotateY(20deg) skewY(10deg);
+    }
+    .menu .cards .card:hover{
+        transform:  scale(1.2);
     }
     #left-card:hover ~ #right-card, #left-card:hover ~  #middle-card, #middle-card:hover ~ #right-card{
         transform: perspective(5000px) rotateY(-20deg) skewY(10deg);
