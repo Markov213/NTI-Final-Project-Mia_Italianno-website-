@@ -2,6 +2,8 @@
 /* Font name 'Kalam', Font family ('Kalam', cursive) -> this is kalam regular */
 /* Font name 'Merienda', Font family ('Merienda', cursive) -> this is Merienda regular */
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Luckiest+Guy&family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* Main Settings */
 :root {
@@ -24,6 +26,10 @@
 }
 
 a {
+    text-decoration: none;
+}
+
+.menu a {
     color: var(--main-text-color);
     text-decoration: none;
     height: 40px;
@@ -112,8 +118,247 @@ a {
 /* End Loading Screen */
 
 
-/*--------------------------------------*/
+/*About-us Section Start*/
 
+#About-us .awards{
+display: flex;
+flex-wrap: wrap;
+justify-content:space-between;;
+border-bottom: 1px solid #EEEEEE;
+}
+
+#About-us .awards .award{
+ position: relative;
+  display: flex;
+ width: calc(95%/4);
+ justify-content: center;
+ align-items: center;
+ padding: 15px;
+ flex-grow: 1;
+}
+
+#About-us .awards .award::after{
+ position: absolute;
+ content:'';
+ width: 0;
+ height: 4px;
+ bottom: 0;
+ left: 0;
+ background-color:var(--main-color);
+ visibility: hidden;
+ transition: width 0.6s ease-out;
+ 
+}
+
+#About-us .awards .award:hover::after {
+   visibility: visible;
+    width: 100%;
+}
+
+#About-us .awards .award .image {
+ padding: 20px;
+}
+
+
+#About-us .awards .award .image img{
+ width: 100px;
+ opacity: 0.5;
+}
+
+#About-us .awards .award .image img:hover{
+ opacity: 1;
+ transition-duration: 0.3s;
+}
+
+#About-us .awards .award .content{
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+}
+
+#About-us .awards .award .content p{
+    color: var(--sec-text-color);
+    font-size: 18px;
+    margin-bottom: 10px;
+    
+}
+
+
+#About-us .awards .award .content img{
+width: 55px;
+    margin-bottom: 10px;
+}
+
+#About-us .awards .award .content span{
+ color: #D7CECB;
+ 
+}
+
+@media screen and (max-width:767px){
+    #About-us .awards .award{
+           border-bottom: 1px solid #EEEEEE;    
+    }
+}
+
+
+@media screen and (max-width:1199px){
+    #About-us .awards .award{
+       width:calc(95%/2);
+        min-width:250px;        
+    }
+}
+
+
+@media screen and (min-width:1200px) and (max-width:1399px){
+    #About-us .awards .award{
+       width:calc(95%/4);
+        min-width: 300px;  
+        justify-content: start; 
+        flex-grow: 0;   
+    }
+}
+
+
+
+#About-us .offer{
+ display: flex;
+ justify-content: center;
+ padding: 50px ;
+ 
+}
+
+#About-us .offer .imgs{
+  display: flex;
+ 
+}
+#About-us .offer .imgs .img1{
+  width: 300px;
+  height: 400px;
+  background-image: url('../img/image2.webp');
+  background-size: cover ;
+  background-repeat: no-repeat;
+}
+
+
+#About-us .offer .imgs .img1 .discount,
+#About-us .offer .imgs .img2 .discount{
+  background-color: #ff840098;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-text-color);
+  font-weight: 300;
+}
+
+
+#About-us .offer .imgs .img1 .discount span,
+#About-us .offer .imgs .img2 .discount span{
+  font-size: 18px;
+  padding: 20px 0;
+  
+  font-family: "Roboto", sans-serif;
+}
+
+#About-us .offer .imgs .img1 .discount h2,
+#About-us .offer .imgs .img2 .discount h2{
+
+  font-family: "Roboto", sans-serif;
+}
+
+
+#About-us .offer .imgs .img2{
+  width: 300px;
+  height: 400px;
+  background-image: url('../img/image1.webp');
+   background-size: cover ;
+  background-repeat: no-repeat;
+}
+
+#About-us .offer .imgs .img2 .discount{
+background-color: #0000009e
+}
+
+
+#About-us .offer .about{
+color: var(--sec-text-color);
+padding: 10px 20px 10px 50px;
+
+}
+
+#About-us .offer .about h2{
+  display: flex;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  font-family: 'Merienda', cursive;
+}
+
+#About-us .offer .about .par{
+  display: flex;
+  padding-bottom: 20px;
+}
+
+#About-us .offer .about .par p{
+  font-size: 18px;
+}
+
+
+#About-us .offer .about .par i{
+  font-size: 22px;
+  padding-right: 35px;
+}
+
+#About-us .offer .about a{ 
+  background-color: var(--main-color);
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  padding: 7px 15px;
+ margin-left: 30px;
+}
+
+#About-us .offer .about a:hover{
+  
+  background-color: #E86D00;
+  color: var(--main-text-color);
+  transition-duration: 0.3s;
+}
+
+@media screen and (max-width:991px) {
+   #About-us .offer{
+        flex-direction: column;
+    }
+  #About-us .offer .imgs .img1,
+  #About-us .offer .imgs .img2{
+    width: 100%;
+    height: 170px;
+    
+}
+ #About-us .offer .imgs .img1 .discount,
+ #About-us .offer .imgs .img2 .discount{
+     height: 100%;
+}
+
+  #About-us .offer .imgs {
+    flex-direction: column;
+    flex-grow: 1;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+   
+    #About-us .offer .about{
+        padding:0px;
+    }
+
+     #About-us .offer .about .par{
+       display: block;
+       padding-left: 30px;
+    }
+
+}
+
+/*About-us Section Start*/
 
 
 /* Start Menu Section */
@@ -299,7 +544,7 @@ a {
     }
 }
 /* End Menu Section */
-/*--------------------------------------*/
+
 /* booking Section Start */
 #book {
     padding: 50px;
