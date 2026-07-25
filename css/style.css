@@ -799,13 +799,13 @@ width: 500px;
 }
 
 
-.carousel-item .col-md-6 {
+.page-4 .carousel-item .col-md-6 {
   background-color: transparent;
   padding: 10px 120px;
   color: #555;
 }
 
-.carousel-item p {
+.page-4 .carousel-item p {
   font-style: italic;
   font-family: 'Poppins', cursive;
   line-height: 1.9;
@@ -813,59 +813,59 @@ width: 500px;
   margin-top: 10px;
 }
 
-.carousel-item i {
+.page-4 .carousel-item i {
   color: rgb(238, 138, 15);
   margin-bottom: 15px;
 }
 
-.carousel-item img {
+.page-4 .carousel-item img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   margin-top: 17px;
 }
 
-.p-t {
+.page-4 .p-t {
   display: flex;
   gap: 40px;
 }
 
-.t {
+.page-4 .t {
   margin-top: 30px;
 }
 
-.carousel-item h4 {
+.page-4 .carousel-item h4 {
   color: #363535;
   font-family: 'Poppins', cursive;
   font-size: 22px;
 }
 
-.source {
+.page-4 .source {
   font-style: italic;
   color: #999;
   font-size: 14px;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
+.page-4 .carousel-control-prev-icon,
+.page-4 .carousel-control-next-icon {
   background-color: rgb(176, 169, 157);
   border-radius: 50%;
   width: 20px;
   height: 20px;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
+.page-4 .carousel-control-prev,
+.page-4 .carousel-control-next {
   width: 2%;
 }
 
-.carousel-control-prev:hover .carousel-control-prev-icon,
-.carousel-control-next:hover .carousel-control-next-icon {
+.page-4 .carousel-control-prev:hover .carousel-control-prev-icon,
+.page-4 .carousel-control-next:hover .carousel-control-next-icon {
   background-color: rgb(238, 138, 15);
 }
 
 @media (max-width: 768px) {
-  .carousel-item .col-md-6 {
+  .page-4 .carousel-item .col-md-6 {
     width: 100%;        
     margin-bottom: 20px; 
   }
@@ -880,27 +880,27 @@ width: 500px;
   height: 55vh;
   width: 100%;
 }
-.container {
+.page-5 .container {
   display: flex;
   width: 100%;
   margin: 0;
   padding: 0;
   margin-top: 120px;
 }
-.card {
+.page-5 .card {
   width: 25%;
 }
 
-.image {
+.page-5 .image {
   position: relative;
   overflow: hidden;
   cursor: pointer;
 }
-.image img {
+.page-5 .image img {
   width: 100%;
   transition: .5s;
 }
-.image::before {
+.page-5 .image::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -912,7 +912,7 @@ width: 500px;
 
 
 /* shine */
-.image::after {
+.page-5 .image::after {
   content: "";
   position: absolute;
   width: 35%;
@@ -928,7 +928,7 @@ width: 500px;
   opacity: 0;
   z-index: 2;
 }
-.image:hover::after {
+.page-5 .image:hover::after {
   animation: shine 1.2s ease forwards;
 }
 @keyframes shine {
@@ -936,12 +936,12 @@ width: 500px;
   15% { opacity: 1; }
   100% { left: 130%; bottom: 130%; opacity: 0; }
 }
-.image:hover::before {
+.page-5 .image:hover::before {
   opacity: 1;
 }
 
 
-.image span {
+.page-5 .image span {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -952,23 +952,23 @@ width: 500px;
   font-style: italic;
   z-index: 3;
 }
-.image span:hover{
+.page-5 .image span:hover{
   background-color: #c77211;
 }
 
-.card h3 {
+.page-5 .card h3 {
   margin-top: 15px;
   display: flex;
   font-size: 15px;
   font-family: 'Poppins', cursive;
 
 }
-.card h3 span {
+.page-5 .card h3 span {
   color: orange;
   font-weight: bold;
   margin-left: 10px;
 }
-.card p {
+.page-5 .card p {
   color: gray;
   margin-top: 10px;
   font-family: 'Poppins', cursive;
@@ -980,10 +980,10 @@ width: 500px;
 
 
 /* box */
-.d-none{
+.page-5 .d-none{
   display:none;
 }
-.box {
+.page-5 .box {
   position: fixed;
   top: 0;
   left: 0;
@@ -995,7 +995,7 @@ width: 500px;
   align-items: center;
   z-index: 9999;
 }
-.box-img {
+.page-5 .box-img {
   width: 700px;
   height: 450px;
   background-size: cover;
@@ -1026,12 +1026,12 @@ width: 500px;
 
 
 @media (max-width: 992px) {
-  .card {
+  .page-5 .card {
     width: 50%; 
   }
 }
 @media (max-width: 576px) {
-  .card {
+  .page-5 .card {
     width: 100%; 
     margin-bottom: 25px;
   }

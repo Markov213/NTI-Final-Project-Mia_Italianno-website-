@@ -36,11 +36,11 @@ window.addEventListener("scroll", function () {
 // ================= Start Lightbox Gallery =================
 
 // Select all gallery images
-var imgs = document.querySelectorAll(".pizza-img");
+var imgs = document.querySelectorAll(".page-5 .pizza-img");
 console.log(imgs.length);
 
 // Select required elements
-var imgs = document.querySelectorAll(".image");
+var imgs = document.querySelectorAll(".page-5 .image");
 var box = document.querySelector(".box");
 var boxImg = document.querySelector(".box-img");
 var curIndex = 0;
