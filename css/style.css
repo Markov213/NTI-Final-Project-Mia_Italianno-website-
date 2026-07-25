@@ -283,7 +283,7 @@ background-color: #0000009e
 #About-us .offer .about{
 color: var(--sec-text-color);
 padding: 10px 20px 10px 50px;
-width: 600px;
+width: 500px;
 }
 
 #About-us .offer .about h2{
@@ -296,6 +296,7 @@ width: 600px;
 #About-us .offer .about .par{
   display: flex;
   padding-bottom: 20px;
+ 
 }
 
 #About-us .offer .about .par p{
