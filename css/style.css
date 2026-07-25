@@ -727,7 +727,8 @@ width: 500px;
   background-color: #f9f9f9;
   padding: 60px 50px;
   text-align: center;
-  height: 80vh;
+  min-height: 80vh;
+  height: auto;
   margin-bottom: 120px;
 }
  
@@ -748,7 +749,7 @@ width: 500px;
 
 .page-4 .carousel-item .col-md-6 {
   background-color: transparent;
-  padding: 10px 150px;
+  padding: 10px 40px;
   color: #555;
 }
 
@@ -814,8 +815,7 @@ width: 500px;
 
 @media (max-width: 768px) {
   .page-4 .carousel-item .col-md-6 {
-    width: 100%;        
-    margin-bottom: 20px; 
+    padding:20px;
   }
 }
 
@@ -825,7 +825,8 @@ width: 500px;
 
 /* Start Special Menu Section */
 .page-5{
-  height: 70vh;
+  height: auto;
+  padding-bottom: 60px;
   width: 100%;
 }
 .page-5 .container{
@@ -835,7 +836,7 @@ width: 500px;
     padding: 0;
 }
 .page-5 .card{
-    flex: 1;
+    flex:0 0 25%;
     border-radius: 0;
     border: none;
 }
@@ -982,14 +983,21 @@ width: 500px;
 
 @media (max-width: 992px) {
   .page-5 .card {
-    width: 50%; 
+    flex:0 0 50%; 
   }
 }
-@media (max-width: 576px) {
-  .page-5 .card {
-    width: 100%; 
+@media (max-width: 768px) {
+
+  .page-5 .container{
+    flex-direction: column;
+  }
+
+  .page-5 .card{
+    width: 100%;
+    flex: 0 0 100%;
     margin-bottom: 25px;
   }
+
 }
 /* End Special Menu Section  */
 
