@@ -117,9 +117,9 @@ a {
 }
 /* End Loading Screen */
 /* start header */
-header i{
-    color:#ED7C03
-} 
+header .fa-solid{
+    color:#ED7C03;
+}
 header .fa-brands{
     color:black;
     cursor:pointer;
@@ -130,7 +130,20 @@ header .fa-brands:hover{
     color:#ed7c03;
 }
 
-.navbar{
+header .trip-icon{
+    width:18px;
+    height:18px;
+    fill:#222;
+    cursor:pointer;
+    transition:.3s;
+    margin-right:8px;
+    vertical-align:middle;
+}
+ header .trip-icon:hover{
+    fill:#ED7C03;
+}
+
+ .navbar{
     position: fixed;
     top: 45px;       
     left: 0;
@@ -140,111 +153,98 @@ header .fa-brands:hover{
     transition: all .4s ease;
 }
 
-.navbar.scrolled{
+ .navbar.scrolled{
     top: 0;
     background: rgba(0,0,0,.85);
 }
 
-.navbar-brand{
+.navbar .navbar-brand{
     color: #fff;
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.navbar-brand:hover{
+.navbar .navbar-brand:hover{
     color: #fff;
 }
 
-.nav-link{
+.navbar .nav-link{
     color: #fff;
     font-size: 14px;
     margin-left: 18px;
     transition: .3s;
 }
 
-.nav-link:hover{
+.navbar .nav-link:hover{
     color: #ED7C03;
 }
 
-.nav-link.active{
+.navbar .nav-link.active{
     color: #ED7C03 !important;
 }
 
-.navbar-toggler{
+.navbar .navbar-toggler{
     border: none;
 }
 
-.navbar-toggler:focus{
+.navbar .navbar-toggler:focus{
     box-shadow: none;
 }
 
-.fa-bars{
+.navbar .navbar-toggler .fa-bars{
     color:white;
     font-size:24px;
 }
 
-.trip-icon{
-    width:18px;
-    height:18px;
-    fill:#222;
-    cursor:pointer;
-    transition:.3s;
-    margin-right:8px;
-    vertical-align:middle;
-}
-
-.trip-icon:hover{
-    fill:#ED7C03;
-}
-
 @media (max-width:992px){
 
-    .navbar-collapse{
-        background: rgba(0,0,0,.8);
+    .navbar .navbar-collapse{
+        background: rgba(16, 16, 16, 0.8);
         padding: 15px;
     }
 
 }
 
 
-.carousel-item{
+
+#main-slider .carousel-item{
     position: relative;
     transition-duration: 1s;
 }
 
-.carousel-item img{
+#main-slider .carousel-item img{
     height: 100vh;
     object-fit: cover;
 }
 
-.overlay{
+#main-slider .overlay{
     position: absolute;
     inset: 0;
     background: rgba(0,0,0,.45);
     z-index: 1;
 }
 
-.carousel-caption{
+#main-slider .carousel-caption{
     z-index:2 ;
     bottom: 50%;
     transform: translateY(50%);
 }
 
 
-.carousel-caption h1{
+#main-slider .carousel-caption h1{
      font-size: 64px;
      font-family: "Playball", cursive;
      margin-bottom: 20px;
 }
 
-.carousel-caption p{
+#main-slider .carousel-caption p{
   font-family: "Merienda", cursive;
     font-size: 24px;
     margin-bottom: 25px;
 }
 
-.carousel-caption .btn{
+#main-slider .carousel-caption .btn{
     background: #ED7C03;
     color: #fff;
     padding: 12px 28px;
@@ -252,28 +252,27 @@ header .fa-brands:hover{
     transition: .3s;
 }
 
-.carousel-caption .btn:hover{
+#main-slider .carousel-caption .btn:hover{
     background: #d96f02;
 }
 
-.carousel-control-next-icon,
-.carousel-control-prev-icon{
-     
-  
+#main-slider .carousel-control-next-icon,
+#main-slider .carousel-control-prev-icon{
+    
     width: 40px;
     height: 40px;
 }
 
 
 @media (max-width:768px){
-    .carousel-caption h1{
+   #main-slider .carousel-caption h1{
         font-size:40px;
     }
 }
 
 @media (max-width:768px){
 
-    .slider-text{
+    #main-slider .slider-text{
         display: none;
     }
 
@@ -281,13 +280,12 @@ header .fa-brands:hover{
 
 @media (max-width:768px){
 
-    .carousel-caption .btn{
+    #main-slider .carousel-caption .btn{
         padding: 8px 18px;
         font-size: 14px;
     }
 
 }
-
 /* end header */
 
 
