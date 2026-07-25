@@ -15,3 +15,18 @@ window.addEventListener('load', async () => {
     }, 5000);
 });
 // End Loading Screen
+
+
+// start navbar
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", function () {
+
+    if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+
+});
+//end navbar

@@ -116,6 +116,179 @@ a {
   }
 }
 /* End Loading Screen */
+/* start header */
+header i{
+    color:#ED7C03
+} 
+header .fa-brands{
+    color:black;
+    cursor:pointer;
+    transition:.3s;
+
+}
+header .fa-brands:hover{
+    color:#ed7c03;
+}
+
+.navbar{
+    position: fixed;
+    top: 45px;       
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: transparent;
+    transition: all .4s ease;
+}
+
+.navbar.scrolled{
+    top: 0;
+    background: rgba(0,0,0,.85);
+}
+
+.navbar-brand{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navbar-brand:hover{
+    color: #fff;
+}
+
+.nav-link{
+    color: #fff;
+    font-size: 14px;
+    margin-left: 18px;
+    transition: .3s;
+}
+
+.nav-link:hover{
+    color: #ED7C03;
+}
+
+.nav-link.active{
+    color: #ED7C03 !important;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.fa-bars{
+    color:white;
+    font-size:24px;
+}
+
+.trip-icon{
+    width:18px;
+    height:18px;
+    fill:#222;
+    cursor:pointer;
+    transition:.3s;
+    margin-right:8px;
+    vertical-align:middle;
+}
+
+.trip-icon:hover{
+    fill:#ED7C03;
+}
+
+@media (max-width:992px){
+
+    .navbar-collapse{
+        background: rgba(0,0,0,.8);
+        padding: 15px;
+    }
+
+}
+
+
+.carousel-item{
+    position: relative;
+    transition-duration: 1s;
+}
+
+.carousel-item img{
+    height: 100vh;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+    z-index: 1;
+}
+
+.carousel-caption{
+    z-index:2 ;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+
+.carousel-caption h1{
+     font-size: 64px;
+     font-family: "Playball", cursive;
+     margin-bottom: 20px;
+}
+
+.carousel-caption p{
+  font-family: "Merienda", cursive;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.carousel-caption .btn{
+    background: #ED7C03;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 0;
+    transition: .3s;
+}
+
+.carousel-caption .btn:hover{
+    background: #d96f02;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+     
+  
+    width: 40px;
+    height: 40px;
+}
+
+
+@media (max-width:768px){
+    .carousel-caption h1{
+        font-size:40px;
+    }
+}
+
+@media (max-width:768px){
+
+    .slider-text{
+        display: none;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .carousel-caption .btn{
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+
+}
+
+/* end header */
 
 
 /*About-us Section Start*/
