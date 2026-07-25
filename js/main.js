@@ -30,3 +30,61 @@ window.addEventListener("scroll", function () {
 
 });
 //end navbar
+
+
+
+// ================= Start Lightbox Gallery =================
+
+// Select all gallery images
+var imgs = document.querySelectorAll(".pizza-img");
+console.log(imgs.length);
+
+// Select required elements
+var imgs = document.querySelectorAll(".image");
+var box = document.querySelector(".box");
+var boxImg = document.querySelector(".box-img");
+var curIndex = 0;
+
+// Open lightbox when clicking an image
+for (let i = 0; i < imgs.length; i++) {
+  imgs[i].onclick = function () {
+    console.log("clicked");
+
+    box.classList.remove("d-none");
+
+    var imgSrc = imgs[i].querySelector("img").src;
+    curIndex = i;
+    boxImg.style.backgroundImage = `url(${imgSrc})`;
+  };
+}
+
+// Close lightbox
+document.querySelector("#close").onclick = function () {
+  box.classList.add("d-none");
+};
+
+// Show next image
+document.querySelector("#right").onclick = function () {
+  curIndex = (curIndex + 1) % imgs.length;
+  var imgSrc = imgs[curIndex].querySelector("img").src;
+  boxImg.style.backgroundImage = `url(${imgSrc})`;
+};
+
+// Show previous image
+document.querySelector("#left").onclick = function () {
+  curIndex = (curIndex - 1 + imgs.length) % imgs.length;
+  var imgSrc = imgs[curIndex].querySelector("img").src;
+  boxImg.style.backgroundImage = `url(${imgSrc})`;
+};
+
+// Prevent closing when clicking inside the image
+boxImg.addEventListener("click", function (e) {
+  e.stopPropagation();
+});
+
+// Close lightbox when clicking outside
+box.addEventListener("click", function () {
+  box.classList.add("d-none");
+});
+
+// ================= End Lightbox Gallery =================
