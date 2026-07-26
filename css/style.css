@@ -39,6 +39,26 @@ a {
     align-items: center;
 }
 
+
+/* Start Scroller */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #F3F3F3;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  height: 16px;
+  border: 1px solid #F3F3F3;
+  background: var(--main-color);
+  border-radius: 16px;
+}
+/* End Scroller */
+
 /* Start Loading Screen */
 #loading-screen {
     position: fixed;
@@ -116,6 +136,7 @@ a {
   }
 }
 /* End Loading Screen */
+
 /* start header */
 header .fa-solid{
     color:#ED7C03;
@@ -210,7 +231,7 @@ header .trip-icon{
 
 #main-slider .carousel-item{
     position: relative;
-    transition-duration: 1s;
+    transition-duration: 1s ;
 }
 
 #main-slider .carousel-item img{
@@ -755,7 +776,6 @@ width: 500px;
 
 .page-4 .carousel-item p {
   font-style: italic;
-  font-family: "Merienda", cursive;
   line-height: 1.9;
   font-size: 16px;
   margin-top: 10px;
@@ -775,6 +795,8 @@ width: 500px;
 
 .page-4 .p-t {
   display: flex;
+  justify-content: center;
+  text-align: left;
   gap: 40px;
 }
 
@@ -784,7 +806,6 @@ width: 500px;
 
 .page-4 .carousel-item h4 {
   color: #363535;
-  font-family: "Merienda", cursive;
   font-size: 22px;
 }
 
@@ -792,7 +813,6 @@ width: 500px;
   font-style: italic;
   color: #999;
   font-size: 14px;
-  font-family: "Merienda", cursive;
 }
 
 .page-4 .carousel-control-prev-icon,

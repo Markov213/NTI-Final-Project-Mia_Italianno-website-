@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav">
 
     <!--Start Loading Screen-->
     <div id="loading-screen">
@@ -78,7 +78,7 @@
 
 
     <!--start navbar-->
-    <nav class="navbar navbar-expand-lg py-2">
+    <nav id="testtt" class="navbar navbar-expand-lg py-2">
 
     <div class="container">
 
@@ -111,7 +111,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">MENU</a>
+                    <a class="nav-link" href="#menu-3d">MENU</a>
                 </li>
 
                 <li class="nav-item">
@@ -141,7 +141,7 @@
 
 
 <!--srart slider-->
-<div id="main-slider" class="carousel slide" data-bs-ride="carousel">
+<div id="main-slider" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
     <div class="carousel-inner">
 
@@ -223,7 +223,7 @@
     <!--end slider-->
 
     
-    <!--Start Menu Section-->
+    <!--Start About Us-->
     <section id="About-us">
 
         <div class="awards">
@@ -276,9 +276,9 @@
                 </div>
 
             </div>
-
+            
         </div>
-
+        
         <div class="offer">
             <div class="imgs">
                 <div class="img1">
@@ -314,40 +314,37 @@
 
 
     </section>
+    <!--End About US-->
 
-
-    <div class="menu">
-
-        <!-- Menu Section-->
-        <section class="menu">
-
-            <div class="cards">
-                <div id="left-card" class="card">
-                    <img src="img/juice.jpg" alt="img">
-                    <div class="overlay">
-                        <h2>Drinks</h2>
-                        <p>A native of the Italian city of Naples, Simon is one of the best pizzaioli in the US.</p>
-                        <a href="#">View More</a>
-                    </div>
-                </div>
-                <div id="middle-card" class="card">
-                    <img src="img/Courses.jpg" alt="img">
-                    <div class="overlay">
-                        <h2>Main Courses</h2>
-                        <p>A native of the Italian city of Naples, Simon is one of the best pizzaioli in the US.</p>
-                        <a href="#">View More</a>
-                    </div>
-                </div>
-                <div id="right-card" class="card">
-                    <img src="img/starters.jpg" alt="img">
-                    <div class="overlay">
-                        <h2>Starters</h2>
-                        <p>A native of the Italian city of Naples, Simon is one of the best pizzaioli in the US.</p>
-                        <a href="#">View More</a>
-                    </div>
-                </div>
+<!--Start Menu Section-->
+<section id="menu-3d" class="menu">
+    <div class="cards">
+        <div id="left-card" class="card">
+            <img src="img/juice.jpg" alt="img">
+            <div class="overlay">
+                <h2>Drinks</h2>
+                <p>A native of the Italian city of Naples, Simon is one of the best pizzaioli in the US.</p>
+                <a href="#">View More</a>
             </div>
+        </div>
+        <div id="middle-card" class="card">
+            <img src="img/Courses.jpg" alt="img">
+            <div class="overlay">
+                <h2>Main Courses</h2>
+                <p>A native of the Italian city of Naples, Simon is one of the best pizzaioli in the US.</p>
+                <a href="#">View More</a>
+            </div>
+        </div>
+        <div id="right-card" class="card">
+            <img src="img/starters.jpg" alt="img">
+            <div class="overlay">
+                <h2>Starters</h2>
+                <p>A native of the Italian city of Naples, Simon is one of the best pizzaioli in the US.</p>
+                <a href="#">View More</a>
+            </div>
+        </div>
     </div>
+</section>
     <!--End Menu Section-->
 
 

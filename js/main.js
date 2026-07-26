@@ -1,3 +1,5 @@
+document.body.style.overflow = "hidden";
+
 // Start Loading Screen
 let loadingScreen = document.getElementById('loading-screen');
 let loadingIcon = document.getElementById('loading-icon');
@@ -12,6 +14,7 @@ window.addEventListener('load', async () => {
     
     setTimeout(() => {
         loadingScreen.remove();
+        document.body.style.overflowY = "auto";
     }, 5000);
 });
 // End Loading Screen
