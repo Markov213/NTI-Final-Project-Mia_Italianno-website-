@@ -165,18 +165,18 @@ header .trip-icon{
 }
 
  .navbar{
-    position: fixed;
+    position: absolute;
     top: 45px;       
     left: 0;
     width: 100%;
     z-index: 1000;
     background: transparent;
-    transition: all .4s ease;
 }
 
  .navbar.scrolled{
+    position: fixed;
     top: 0;
-    background: rgba(0,0,0,.85);
+    background: rgba(0,0,0,.50);
 }
 
 .navbar .navbar-brand{
