@@ -179,6 +179,10 @@ header .trip-icon{
     background: rgba(0,0,0,.50);
 }
 
+.navbar .container a{
+  font-weight: 400;
+}
+
 .navbar .navbar-brand{
     color: #fff;
     font-size: 20px;
@@ -236,7 +240,7 @@ header .trip-icon{
 
 #main-slider .carousel-item img{
     height: 100vh;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 #main-slider .overlay{
@@ -255,7 +259,7 @@ header .trip-icon{
 
 #main-slider .carousel-caption h1{
      font-size: 64px;
-     font-family: "Playball", cursive;
+     font-family: Georgia, "Times New Roman", serif;
      margin-bottom: 20px;
 }
 
