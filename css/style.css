@@ -319,7 +319,7 @@ header .trip-icon{
 #About-us .awards{
 display: flex;
 flex-wrap: wrap;
-justify-content:space-between;;
+justify-content:space-between;
 border-bottom: 1px solid #EEEEEE;
 }
 
@@ -372,7 +372,7 @@ border-bottom: 1px solid #EEEEEE;
     width: 140px;
 }
 
-#About-us .awards .award .content p{
+#About-us .awards .award .content h4{
     color: var(--sec-text-color);
     font-size: 18px;
     margin-bottom: 10px;
@@ -555,8 +555,19 @@ width: 500px;
     }
 
 }
+@media screen and (min-width:991px) and (max-width:1199px){
+    
+#About-us .offer .about{
+    width: 400px;
+}
 
-/*About-us Section Start*/
+#About-us .offer .imgs{
+ width: 450px;
+}
+
+}
+
+/*About-us Section end*/
 
 
 /* Start Menu Section */
