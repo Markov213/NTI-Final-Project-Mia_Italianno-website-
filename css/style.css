@@ -757,51 +757,64 @@ width: 500px;
 
 
 
-
- /* Start Testimonials Section  */
 .page-4 {
   background-color: #f9f9f9;
   padding: 60px 50px;
   text-align: center;
-  min-height: 80vh;
-  height: auto;
-  margin-bottom: 120px;
+  height: 90vh;
+  position: relative;
 }
- 
 
 .Header-page-4 h2 {
-  font-family: "Merienda", cursive;
+  font-family: 'Poppins', cursive;
   font-size: 30px;
   color: #333;
   margin-bottom: 40px;
 }
 
 .Header-page-4 h3 {
-  font-family: "Merienda", cursive;
-  font-size: 30px;
+  font-family: 'Poppins', cursive;
+  font-size: 20px;
   color: #817e7e;
   margin-bottom: 20px;
 }
 
-.page-4 .carousel-item .col-md-6 {
-  background-color: transparent;
-  padding: 10px 40px;
+.page-4 .carousel-wrapper {
+  width: 100%;         
+  max-width: 1000px;    
+  overflow: hidden;
+  margin: auto;
+  margin-top: 80px;
+  
+}
+
+.page-4 .carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.page-4 .review {
+  flex: 0 0 50%;       
+  padding: 20px;
+  background: #f9f9f9;
+  border: none;
+}
+
+.page-4 .review p {
+  font-style: italic;
+  font-family: 'Poppins', cursive;
+  font-size:18px;
+  line-height:1.8;
+  margin-top: 10px;
   color: #555;
 }
 
-.page-4 .carousel-item p {
-  font-style: italic;
-  line-height: 1.9;
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-.page-4 .carousel-item i {
+.page-4 .review i {
   color: rgb(238, 138, 15);
   margin-bottom: 15px;
 }
 
-.page-4 .carousel-item img {
+.page-4 .review img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -810,18 +823,18 @@ width: 500px;
 
 .page-4 .p-t {
   display: flex;
+  gap: 20px;
   justify-content: center;
-  text-align: left;
-  gap: 40px;
 }
 
 .page-4 .t {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
-.page-4 .carousel-item h4 {
+.page-4 .review h4 {
   color: #363535;
-  font-size: 22px;
+  font-family: 'Poppins', cursive;
+  font-size: 20px;
 }
 
 .page-4 .source {
@@ -830,39 +843,108 @@ width: 500px;
   font-size: 14px;
 }
 
-.page-4 .carousel-control-prev-icon,
-.page-4 .carousel-control-next-icon {
-  background-color: rgb(176, 169, 157);
+.page-4 button {
+  background: rgb(176, 169, 157);
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  margin: 10px;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  cursor: pointer;
 }
 
-.page-4 .carousel-control-prev,
-.page-4 .carousel-control-next {
-  width: 2%;
+.page-4 button:hover {
+  background: rgb(238, 138, 15);
 }
 
-.page-4 .carousel-control-prev:hover .carousel-control-prev-icon,
-.page-4 .carousel-control-next:hover .carousel-control-next-icon {
-  background-color: rgb(238, 138, 15);
+.page-4 .carousel-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: auto;
 }
 
-@media (max-width: 768px) {
-  .page-4 .carousel-item .col-md-6 {
-    padding:20px;
+.page-4 .carousel-btn{
+    position:absolute;
+    top:60%;
+    transform:translateY(-50%);
+    width:30px;
+    height:30px;
+    border:none;
+    border-radius:50%;
+    background:#f7f7f7;
+    color:#ff7a00;
+    font-size:15px;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.page-4 .carousel-btn:hover{
+    background:#ff7a00;
+    color:#fff;
+}
+
+.page-4 .carousel-btn.prev { 
+  left: 95px;             
+}
+
+.page-4 .carousel-btn.next {
+  right: 100px;           
+}
+/* ديسكتوب */
+.page-4 .review {
+  flex: 0 0 50%;   /* اتنين جنب بعض */
+}
+
+/* تابلت */
+@media (max-width: 992px) {
+  .page-4 .review {
+    flex: 0 0 100%;   /* واحد بس */
+  }
+
+  .page-4 .carousel-btn.prev { 
+    left: 20px;   /* يقرب للشمال */
+  }
+
+  .page-4 .carousel-btn.next {
+    right: 20px;  /* يقرب لليمين */
   }
 }
 
-/* End Testimonials Section */
+/* موبايل */
+@media (max-width: 576px) {
+  .Header-page-4 h2 {
+    font-size: 22px;
+  }
+  .Header-page-4 h3 {
+    font-size: 16px;
+  }
+  .page-4 .review p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .page-4 .carousel-btn {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+  }
+}
 
 
 
-/* Start Special Menu Section */
+
+
+<!-- Start Special Menu Section -->
 .page-5{
   height: auto;
   padding-bottom: 60px;
   width: 100%;
+  margin-top: 100px;
 }
 .page-5 .container{
     display: flex;
@@ -1034,11 +1116,37 @@ width: 500px;
   }
 
 }
+
+
+.page-5 .card {
+  flex: 0 0 25%;   /* 4 كروت */
+}
+
+/* تابلت */
+@media (max-width: 992px) {
+  .page-5 .card {
+    flex: 0 0 50%;   /* 2 كارت */
+  }
+}
+
+/* موبايل */
+@media (max-width: 576px) {
+  .page-5 .container {
+    flex-direction: column;
+  }
+  .page-5 .card {
+    flex: 0 0 100%;   /* كارت واحد */
+    margin-bottom: 20px;
+  }
+  .page-5 .card h3 {
+    font-size: 12px;
+  }
+  .page-5 .card p {
+    font-size: 11px;
+  }
+}
+
 /* End Special Menu Section  */
-
-
-
-
 
 
 
