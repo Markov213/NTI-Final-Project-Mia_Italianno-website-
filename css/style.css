@@ -1164,6 +1164,7 @@ width: 500px;
 
 #book h2 {
     color: var(--main-color);
+    margin-top: 30px;
     width: 60%;
     font-family: "Merienda", cursive;
  
@@ -1172,19 +1173,25 @@ width: 500px;
 #book p {
     margin: 30px 0;
     width: 60%;
+    font-size: 18px;
+    line-height: 2;
+    
 }
 
-#book button {
-    color: white;
-    background-color: var(--main-color);
-    margin: 30px 0;
+#book a {
+     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 120px;
     height: 40px;
-    border: none;
-    outline: none;
+    color: white;
+    background-color: var(--main-color) ;
+    margin: 30px 0;
+  
 }
-#book button:hover{
-    background-color: #E86D00;
+
+#book a:hover{
+    background-color: #E86D00 ;
 }
 
 @media screen and (max-width:768px) {
@@ -1223,10 +1230,13 @@ width: 500px;
     width: 45%;
     color: white;
     flex: 1;
+    line-height: 2;
 
 }
 
 #f1 .text h3 {
+
+    font-size: 30px;
     margin-bottom: 10px;
     font-family: 'Times New Roman', Times, serif
 }
