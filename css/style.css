@@ -913,6 +913,7 @@ width: 500px;
     align-items:center;
     box-shadow:0 5px 15px rgba(0,0,0,.1);
     transition:.3s;
+    z-index: 5;
 }
 
 .page-4 .carousel-btn:hover{
