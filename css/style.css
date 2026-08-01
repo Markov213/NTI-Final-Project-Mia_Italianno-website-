@@ -766,15 +766,15 @@ width: 500px;
 }
 
 .Header-page-4 h2 {
-  font-family: 'Poppins', cursive;
+  font-family: "Merienda", cursive;
   font-size: 30px;
   color: #333;
   margin-bottom: 40px;
 }
 
 .Header-page-4 h3 {
-  font-family: 'Poppins', cursive;
-  font-size: 20px;
+  font-family: "Merienda", cursive;
+  font-size: 30px;
   color: #817e7e;
   margin-bottom: 20px;
 }
@@ -896,45 +896,48 @@ width: 500px;
 .page-4 .carousel-btn.next {
   right: 100px;           
 }
-/* ديسكتوب */
+
 .page-4 .review {
-  flex: 0 0 50%;   /* اتنين جنب بعض */
+  flex: 0 0 50%;   
 }
 
-/* تابلت */
 @media (max-width: 992px) {
-  .page-4 .review {
-    flex: 0 0 100%;   /* واحد بس */
-  }
 
-  .page-4 .carousel-btn.prev { 
-    left: 20px;   /* يقرب للشمال */
-  }
+    .page-4 .review {
+        flex: 0 0 100%;
+    }
 
-  .page-4 .carousel-btn.next {
-    right: 20px;  /* يقرب لليمين */
-  }
+    .page-4 .carousel-btn.prev {
+        left: 20px;
+    }
+
+    .page-4 .carousel-btn.next {
+        right: 20px;
+    }
 }
 
-/* موبايل */
-@media (max-width: 576px) {
-  .Header-page-4 h2 {
-    font-size: 22px;
-  }
-  .Header-page-4 h3 {
-    font-size: 16px;
-  }
-  .page-4 .review p {
-    font-size: 14px;
-    line-height: 1.6;
-  }
-  .page-4 .carousel-btn {
-    width: 25px;
-    height: 25px;
-    font-size: 12px;
-  }
-}
 
+@media (max-width: 768px) {
+
+    .Header-page-4 h2 {
+        font-size: 22px;
+    }
+
+    .Header-page-4 h3 {
+        font-size: 16px;
+    }
+
+    .page-4 .review p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .page-4 .carousel-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+}
 
 
 
@@ -1118,32 +1121,49 @@ width: 500px;
 }
 
 
-.page-5 .card {
-  flex: 0 0 25%;   /* 4 كروت */
+/* ================= Page 5 Responsive ================= */
+
+/* Desktop */
+.page-5 .card{
+    flex: 0 0 25%;
+    box-sizing: border-box;
 }
 
-/* تابلت */
-@media (max-width: 992px) {
-  .page-5 .card {
-    flex: 0 0 50%;   /* 2 كارت */
-  }
+/* Tablet */
+@media (max-width: 992px){
+
+    .page-5 .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .page-5 .card{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 }
 
-/* موبايل */
-@media (max-width: 576px) {
-  .page-5 .container {
-    flex-direction: column;
-  }
-  .page-5 .card {
-    flex: 0 0 100%;   /* كارت واحد */
-    margin-bottom: 20px;
-  }
-  .page-5 .card h3 {
-    font-size: 12px;
-  }
-  .page-5 .card p {
-    font-size: 11px;
-  }
+/* Mobile */
+@media (max-width: 768px){
+
+    .page-5 .container{
+        flex-direction: column;
+    }
+
+    .page-5 .card{
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .page-5 .card h3{
+        font-size: 16px;
+    }
+
+    .page-5 .card p{
+        font-size: 14px;
+    }
 }
 
 /* End Special Menu Section  */
