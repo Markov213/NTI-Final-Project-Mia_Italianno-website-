@@ -789,7 +789,7 @@ width: 500px;
 
 
 
-
+/* Start Testimonials Section */
 .page-4 {
   background-color: #f9f9f9;
   padding: 60px 50px;
@@ -972,6 +972,7 @@ width: 500px;
         font-size: 14px;
     }
 }
+/* End Testimonials Section */
 
 
 
@@ -1133,9 +1134,6 @@ width: 500px;
   top: -45px;
   right: 0;
 }
-
-
-/* ================= Page 5 Responsive ================= */
 
 /* Desktop */
 .page-5 .card{
