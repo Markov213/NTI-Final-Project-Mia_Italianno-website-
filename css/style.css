@@ -39,6 +39,35 @@ a {
     align-items: center;
 }
 
+/* Start Scroll Back Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 30px;
+    height: 40px;
+    border: none;
+    border-radius: 10%;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 5;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: var(--sec-color);
+}
+/* End Scroll Back Button */
 
 /* Start Scroller */
 ::-webkit-scrollbar {
@@ -886,6 +915,7 @@ width: 500px;
     align-items:center;
     box-shadow:0 5px 15px rgba(0,0,0,.1);
     transition:.3s;
+    z-index: 5;
 }
 
 .page-4 .carousel-btn:hover{
