@@ -258,23 +258,25 @@ header .trip-icon{
 
 
 #main-slider .carousel-caption h1{
-     font-size: 64px;
-     font-family: Georgia, "Times New Roman", serif;
-     margin-bottom: 20px;
+     font-size: 50px;
+     font-family: "Pacifico", cursive;
+     margin-bottom: 30px;
 }
 
 #main-slider .carousel-caption p{
-  font-family: "Merienda", cursive;
-    font-size: 24px;
-    margin-bottom: 25px;
+    font-family: "Merienda", cursive;
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
 #main-slider .carousel-caption .btn{
-    background: #ED7C03;
+    background: #f78801;
     color: #fff;
-    padding: 12px 28px;
+    padding: 13px 22px;
+    line-height: 1;
     border-radius: 0;
     transition: .3s;
+    font-size: 15px;
 }
 
 #main-slider .carousel-caption .btn:hover{
